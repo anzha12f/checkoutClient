@@ -1,0 +1,34 @@
+<div class="panel panel-default" >
+  <div class="panel-heading">Product detail Form : You can see the detail information of a Product in this page of the Apps.</div>
+  <div class="panel-body">
+    <form class="form-horizontal" *ngIf=product>
+  <div class="form-group">
+    <label for="prd_id" class="col-sm-2 control-label">Product Id : </label>
+    <div class="col-sm-9">
+      <p class="form-control">{{product.prdId}}</p> 
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name : </label>
+    <div class="col-sm-9">
+     <p class="form-control">{{product.name}}</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="price" class="col-sm-2 control-label">Price : </label>
+    <div class="col-sm-9">
+     <p class="form-control">{{product.price}}</p>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      
+      <a class="btn btn-info" (click)="goBack()">Cancel</a>
+    </div>
+   
+  </div>
+</form>
+
+  </div>
+</div>
